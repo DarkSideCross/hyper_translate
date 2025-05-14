@@ -20,7 +20,7 @@ document.querySelector('#icon-translate').addEventListener('click', async (evt) 
             langOutput: randomLang
         }
 
-        const textTranslated = await (await fetch('http://localhost:3000/', {
+        const textTranslated = await (await fetch('/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(translationConfig)
@@ -38,7 +38,7 @@ document.querySelector('#icon-translate').addEventListener('click', async (evt) 
         langOutput
     }
     
-    const textTranslated = await (await fetch('http://localhost:3000/', {
+    const textTranslated = await (await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(translationConfig)
